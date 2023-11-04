@@ -1,9 +1,9 @@
 {
   "name": "move-logic-react-bp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "bin": {
-    "simple-ts-app": "bin/install.mjs"
+    "simple-ts-app": ".bin/install.mjs"
   },
   "publishConfig": {
     "registry": "http://localhost:4873"
@@ -93,6 +93,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.5.4",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "ora": "^7.0.1"
   }
 }

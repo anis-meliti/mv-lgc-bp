@@ -42,7 +42,7 @@ try {
     // remove my git history
     const rmGit = rm(path.join(projectPath, ".git"), { recursive: true, force: true });
     // remove the installation file
-    const rmBin = rm(path.join(projectPath, "bin"), { recursive: true, force: true });
+    const rmBin = rm(path.join(projectPath, ".bin"), { recursive: true, force: true });
     await Promise.all([rmGit, rmBin]);
 
     process.chdir(projectPath);
