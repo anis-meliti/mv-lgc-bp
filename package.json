@@ -64,11 +64,11 @@
     "lint": "NODE_ENV=development eslint src --color",
     "serve": "NODE_ENV=development node server.js",
     "start:dev": "NODE_ENV=development npm run build && npm run start",
-    "pre-commit": "npm run lint && npm test"
+    "precommit": "npm run lint && npm test"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "precommit": "npm run precommit"
     }
   },
   "browserslist": {
