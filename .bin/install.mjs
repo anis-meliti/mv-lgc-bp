@@ -21,7 +21,7 @@ const projectName = process.argv[2];
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 // TODO: change to your boilerplate repo
-const git_repo = "https://github.com/anis-meliti/mv-lgc-bp";
+const git_repo = "http://gitlab.anis.works/a-melliti/mvlg-template.git";
 
 // create project directory
 if (fs.existsSync(projectPath)) {
