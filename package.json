@@ -1,6 +1,6 @@
 {
   "name": "move-logic-react-bp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "bin": {
     "simple-ts-app": ".bin/install.mjs"
@@ -71,7 +71,9 @@
     "lint": "NODE_ENV=development eslint src --color",
     "serve": "NODE_ENV=development node server.js",
     "start:dev": "NODE_ENV=development npm run build && npm run start",
-    "pre-commit": "npm run lint && npm test"
+    "pre-commit": "npm run lint && npm test",
+    "docker:build": "docker build -t fo .",
+    "docker:serve": "docker run -p 3000:3000 fo"
   },
   "husky": {
     "hooks": {
